@@ -22,7 +22,7 @@ router.get('/auth/steam/return',
 
 // Logout route
 router.post('/logout', userController.logout);
-router.get('/inventory' ,AuthMiddleware,  limiters.inventoryLimiter ,userController.getInventory)
+router.get('/inventory' , AuthMiddleware,  limiters.inventoryLimiter ,userController.getInventory)
 router.post('/refresh-inventory', AuthMiddleware, limiters.refreshInventoryLimiter ,userController.setInventory)
 router.get('/bots', AuthMiddleware, (req, res)=> {
   const am = botController.getReadyAmount();

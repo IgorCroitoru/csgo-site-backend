@@ -6,8 +6,8 @@ const Bot = require('./bot'),
     async = require('async'),
     util = require('util'),
     setTimeoutPromise = util.promisify(setTimeout),
-    Queue = require('./queue'),
-    OffersProcessor = require('./offersProcessor');
+    Queue = require('./queue');
+    //OffersProcessor = require('./offersProcessor');
 
 class BotController extends EventEmitter {
     constructor() {

@@ -9,7 +9,7 @@ const SteamUser = require('steam-user'),
     UserModel = require('../models/user-model'),
     Queue = require('./queue'),
     FS = require('fs'),
-    OffersProcessor = require('./offersProcessor'),
+   // OffersProcessor = require('./offersProcessor'),
     Utils = require('../utils/utils'),
     async = require('async');
 
