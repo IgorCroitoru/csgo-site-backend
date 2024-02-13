@@ -375,7 +375,7 @@ class Bot extends EventEmitter{
             deposit.offer.send(async (err, status)=>{
                 if (err){
                     
-                    logger.error(`An error occured while sending offer #${deposit.transactionId}`);
+                    logger.error(`An error ocurred while sending offer #${deposit.transactionId}`);
                     //console.log(err)
                     await DepositModel.deleteOne({transactionId: deposit.transactionId})
                     callback(err, null)
